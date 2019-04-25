@@ -22,6 +22,7 @@ public class MyController {
     public String sayHello(HttpServletRequest request){
         Map<String,String> map = new HashMap<String,String>();
         map.put("userName","zhangf");
+        String userName = map.get("userName");
         return "helloWorld";
     }
 }
